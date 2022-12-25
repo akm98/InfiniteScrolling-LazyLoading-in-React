@@ -1,25 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import Pokemons from "./Components/Pokemons";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<div className='flex flex-col items-center h-full min-h-screen capitalize bg-emerald-300'>
+			<p className='py-4'>PokeDex by Akash Mishra</p>
+			<Pokemons />
+		</div>
+	);
 }
 
 export default App;
